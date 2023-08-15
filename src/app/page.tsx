@@ -1,22 +1,19 @@
-import ShowLogo from "@/components/ShowLogo";
-import { AboutMe, Hobbies, LetsTalk, Me, Projects } from "@/sections";
+import PageNumber from "@/components/PageNumber";
 
-export default function Home() {
+const Home = () => {
   return (
     <main className="flex flex-col">
-
-      {/* Section1 - Eu */}
-      <Me />
-      {/* Section2 - Sobre mim */}
-      <AboutMe />
-      {/* Section3 - Projetos notáveis */}
-      <Projects />
-      {/* Section4 - Em off (Hobbies) */}
-      <Hobbies />
-      {/* Section5 - Vamos conversar? (Section com todas as minhas redes relevantes) */}
-      <LetsTalk />
-
-      <ShowLogo />
+      <section
+        id="me"
+        className="flex h-screen w-full flex-col items-center justify-end bg-transparent"
+      >
+        <div className="container mx-2 flex h-5/6 flex-col px-4 py-4">
+          <PageNumber page={"01"} />
+          <h2>A cada dia um novo desafio.</h2>
+        </div>
+      </section>
     </main>
   );
-}
+};
+
+export default Home;

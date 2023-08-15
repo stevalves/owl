@@ -1,29 +1,32 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import Logo from "./Logo";
+import { motion } from "framer-motion";
 
 const ShowLogo = () => {
-  const [close, setClose] = useState(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setClose(true);
-    }, 3000);
-
-    return () => {
-      clearTimeout(timer);
-    };
-  }, []);
-
-  if (close) return null;
+  const container = {
+    initial: {
+      opacity: 1,
+      transform: "scale(1)",
+    },
+    animate: {
+      opacity: 1,
+      transform: "scale(1.3)",
+      transitionEnd: {
+        display: "none"
+      }
+    },
+  };
 
   return (
-    <div
-      className={`fixed left-0 top-0 z-20 flex h-screen w-screen animate-pulse-and-up flex-col items-center justify-center bg-gradient-to-r from-coffee-400 to-coffee-500`}
+    <motion.div
+      initial="initial"
+      animate="animate"
+      variants={container}
+      className="fixed bottom-0 left-0 right-0 top-0 z-20 flex flex-col items-center justify-center bg-gradient-to-r from-forest-400 to-forest-500"
     >
       <Logo col size="xl" />
-    </div>
+    </motion.div>
   );
 };
 

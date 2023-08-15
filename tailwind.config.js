@@ -8,29 +8,36 @@ module.exports = {
   ],
   theme: {
     extend: {
+      borderRadius: {
+        left: "8px 0 0 8px",
+        right: "0 8px 8px 0",
+        bottom: "8px 8px 0 0",
+        top: "0 0 8px 8px",
+      },
       colors: {
-        "coffee-10": "#dfccaf",
-        "coffee-50": "#d2c1b0",
-        "coffee-100": "#ad6d2f",
-        "coffee-200": "#8f755f",
-        "coffee-300": "#6c4c36",
-        "coffee-400": "#4a3a3a",
-        "coffee-500": "#3b2f2f",
-        "coffee-600": "#332a2a",
-        "coffee-700": "#362626",
-        "coffee-800": "#37251b",
-        "coffee-900": "#1b1516",
+        "forest-100": "#F0F2DF",
+        "forest-200": "#A8BCB0",
+        "forest-300": "#517356",
+        "forest-400": "#516D73",
+        "forest-500": "#305040",
+        "forest-600": "#1C402C",
+        "forest-700": "#011526",
       },
     },
     animation: {
       "pulse-and-up": "pulse 5s forwards",
-      "spin": "spinner 1s linear infinite",
-      "goDown": "goDown 2s ease-in-out .5s alternate infinite none running"
+      spin: "spinner 1s linear infinite",
+      twinkleLight: "8s ease 0ms infinite normal none running twinkingLight",
+      goDown: "goDown 2s ease-in-out .5s alternate infinite none running",
     },
     keyframes: {
       pulse: {
         "0%": { transform: "scale(1)", opacity: "100%" },
-        "35%": { transform: "scale(1.3)", opacity: "100%", filter: "brightness(70%)" },
+        "35%": {
+          transform: "scale(1.3)",
+          opacity: "100%",
+          filter: "brightness(70%)",
+        },
         "80%": { transform: "scale(1)", opacity: "100%" },
         "100%": {
           transform: "translateY(-100px)",
@@ -38,16 +45,21 @@ module.exports = {
         },
       },
       spinner: {
-        "from": { transform: "rotate(0deg)" },
-        "to": { transform: "rotate(360deg)" }
+        from: { transform: "rotate(0deg)" },
+        to: { transform: "rotate(360deg)" },
       },
       goDown: {
-        "0%": {transform: "translateY(0)"},
-        "25%": {transform: "translateY(-12px)"},
-        "50%": {transform: "translateY(0)"},
-        "75%": {transform: "translateY(-12)"},
-        "100%": {transform: "translateY(0)"}
-      }
+        "0%": { transform: "translateY(0)" },
+        "25%": { transform: "translateY(-12px)" },
+        "50%": { transform: "translateY(0)" },
+        "75%": { transform: "translateY(-12)" },
+        "100%": { transform: "translateY(0)" },
+      },
+      twinkingLight: {
+        "30%": { opacity: "0.6" },
+        "70%": { opacity: "0.4" },
+        "100%": { opacity: "0.6" },
+      },
     },
   },
   plugins: [],

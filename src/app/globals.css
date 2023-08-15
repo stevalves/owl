@@ -28,3 +28,55 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #a77a4e;
 }
+
+/* body {
+  background-image: url("../imgs/3big_dark_forest.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  backdrop-filter: brightness(75%);
+  transition: all 1s;
+  animation: plim infinite ease-in-out 15s;
+  object-fit: cover;
+} */
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes plim {
+  0% {
+    backdrop-filter: brightness(75%);
+  }
+  10% {
+    backdrop-filter: brightness(90%);
+  }
+  20% {
+    backdrop-filter: brightness(105%);
+  }
+  30% {
+    backdrop-filter: brightness(100%);
+  }
+  40% {
+    backdrop-filter: brightness(110%);
+  }
+  50% {
+    backdrop-filter: brightness(120%);
+  }
+  60% {
+    backdrop-filter: brightness(115%);
+  }
+  70% {
+    backdrop-filter: brightness(110%);
+  }
+  80% {
+    backdrop-filter: brightness(100%);
+  }
+  90% {
+    backdrop-filter: brightness(90%);
+  }
+  100% {
+    backdrop-filter: brightness(75%);
+  }
+}

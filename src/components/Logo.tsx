@@ -3,7 +3,7 @@ import { GiOwl } from "react-icons/gi";
 import { VariantProps, tv } from "tailwind-variants";
 
 const logo = tv({
-  base: "text-[2.5rem] text-coffee-50 flex items-center justify-center w-max",
+  base: "text-[2.5rem] text-forest-100 stroke-cyan-500 flex items-center justify-center w-max",
   variants: {
     col: {
       true: "flex-col",
@@ -23,7 +23,7 @@ const logo = tv({
 
 export type iLogo = ComponentProps<"h1"> & VariantProps<typeof logo>;
 
-const Logo = ({ col=false, size='default', className }: iLogo) => {
+const Logo = ({ col = false, size = "default", className }: iLogo) => {
   return (
     <h1 className={logo({ col, size, className })}>
       <GiOwl />
