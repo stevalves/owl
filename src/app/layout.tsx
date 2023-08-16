@@ -1,10 +1,11 @@
 import Header from "@/components/Header/Header";
+import Aside from "@/components/Nav";
+
 import "./globals.css";
+
 import type { Metadata } from "next";
 import { Anek_Tamil } from "next/font/google";
-import Aside from "@/components/Nav";
-import Footer from "@/components/Footer";
-import BgImage from "@/components/BgImage";
+import { PageWrapper } from "@/components/page-wrapper";
 
 const font = Anek_Tamil({ subsets: ["latin"] });
 
@@ -21,11 +22,11 @@ const RootLayout = ({ children }: iRootLayout) => {
   return (
     <html lang="en">
       <body className={font.className}>
-        <Header />
-        <Aside />
-        <BgImage />
-        {children}
-        <Footer />
+        <PageWrapper>
+          <Aside />
+          <Header />
+          {children}
+        </PageWrapper>
       </body>
     </html>
   );

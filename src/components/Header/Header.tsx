@@ -1,49 +1,17 @@
-"use client";
-
-import { useEffect, useState } from "react";
-import { tv } from "tailwind-variants";
+import Aside from "../Nav";
 import NavBar from "./NavBar";
 
-interface iHeader {}
-
-const Header = ({}: iHeader) => {
-  const [scrollY, setScrollY] = useState(0);
-
-  let see = false;
-
-  const handleScroll = () => {
-    const newScroll =
-      document.documentElement.scrollTop || document.body.scrollTop;
-    setScrollY(newScroll);
-  };
-
-  useEffect(() => {
-    document.addEventListener("scroll", handleScroll);
-    return () => {
-      document.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  const header = tv({
-    base: "bg-transparent fixed right-0 left-0 top-0 text-[2rem] text-gray-300 transition-[3s] flex items-center justify-center z-10",
-    variants: {
-      see: {
-        true: "py-4 opacity-[0.85] object-fill bg-[url('../imgs/header_bg.jpg')]",
-        false: "py-2",
-      },
-    },
-    defaultVariants: {
-      see: false,
-    },
-  });
-
+const Header = () => {
   return (
-    <header
-      className={header({
-        see: scrollY > 40 || see ? true : false,
-      })}
-    >
-      <NavBar />
+    <header className="fixed z-20 left-0 right-0 top-0 bg-transparent text-gray-300">
+      <div className="flex w-full items-center justify-between container mx-auto p-2">
+        <h1 className="text-[1.5rem] tracking-wide md:text-[2rem]">
+          <span className="font-semibold text-forest-200">E</span>stevão{" "}
+          <span className="font-semibold text-forest-200">S</span>antos
+          <span className="font-extrabold text-forest-500">.</span>
+        </h1>
+        <NavBar />
+      </div>
     </header>
   );
 };

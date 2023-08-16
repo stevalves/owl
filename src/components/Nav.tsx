@@ -1,51 +1,51 @@
+"use client";
+
 import Link from "next/link";
-import Logo from "./Logo";
+import { ImProfile, ImHome } from "react-icons/im";
+import { GoProjectRoadmap } from "react-icons/go";
+import { AiOutlineCoffee } from "react-icons/ai";
+import { GiTalk } from "react-icons/gi";
 
+import { usePathname } from "next/navigation";
+import { tv } from "tailwind-variants";
 
+const Aside = () => {
+  const path = usePathname();
 
-interface iAside {}
+  const link_tv = tv({
+    base: "flex w-1/5 justify-center p-4 md:py-6 md:px-4 transition duration-300 hover:bg-forest-700/50 md:w-max",
+    variants: {
+      currentPage: {
+        true: "text-red-500/90",
+      },
+    },
+  });
 
-const Aside = ({}: iAside) => {
   return (
-    <nav className="fixed right-12 bottom-0 sm:top-[25vh] hidden flex-col items-end sm:flex rounded-lg overflow-hidden">
-      <div className="w-[42px] overflow-hidden flex items-center justify-center bg-zinc-800 py-6 transition-[3s]">
-        <Logo size="sm" />
-      </div>
-      <Link
-        href="#me"
-        className="w-[42px] truncate overflow-hidden bg-forest-300/60 px-2 py-6 text-transparent transition-[3s] hover:w-[160px] hover:text-white"
-      >
-        Eu
+    <nav className="z-1 fixed bottom-0 left-0 right-0 flex h-[60px] items-center border-t-2 border-forest-700 text-[24px] text-forest-100 shadow-2xl backdrop-blur-md md:bottom-1/2 md:top-1/2 md:-translate-y-[50%] md:left-auto md:right-[30px] md:h-max md:flex-col md:rounded-[8px] md:border-none md:text-[36px]">
+      <Link href="/" className={link_tv({ currentPage: path === "/" })}>
+        <ImHome />
       </Link>
       <Link
-        href="#me2"
-        className="w-[42px] truncate overflow-hidden bg-forest-300/60 px-2 py-6 text-transparent transition-[3s] hover:w-[160px] hover:text-white"
+        href="/about"
+        className={link_tv({ currentPage: path === "/about" })}
       >
-        Eu2
+        <ImProfile />
       </Link>
       <Link
-        href="#about_me"
-        className="w-[42px] truncate overflow-hidden bg-forest-300/60 px-2 py-6 text-transparent transition-[3s] hover:w-[160px] hover:text-white"
+        href="/projects"
+        className={link_tv({ currentPage: path === "/projects" })}
       >
-        Sobre Mim
+        <GoProjectRoadmap />
       </Link>
       <Link
-        href="#projects"
-        className="w-[42px] truncate overflow-hidden bg-forest-300/60 px-2 py-6 text-transparent transition-[3s] hover:w-[160px] hover:text-white"
+        href="/hobbies"
+        className={link_tv({ currentPage: path === "/hobbies" })}
       >
-        Projetos
+        <AiOutlineCoffee />
       </Link>
-      <Link
-        href="#hobbies"
-        className="w-[42px] truncate overflow-hidden bg-forest-300/60 px-2 py-6 text-transparent transition-[3s] hover:w-[160px] hover:text-white"
-      >
-        Hobbies
-      </Link>
-      <Link
-        href="#lets_talk"
-        className="w-[42px] truncate overflow-hidden bg-forest-300/60 px-2 py-6 text-transparent transition-[3s] hover:w-[160px] hover:text-white"
-      >
-        Vamos Conversar?
+      <Link href="/talk" className={link_tv({ currentPage: path === "/talk" })}>
+        <GiTalk />
       </Link>
     </nav>
   );

@@ -28,7 +28,9 @@ module.exports = {
       "pulse-and-up": "pulse 5s forwards",
       spin: "spinner 1s linear infinite",
       twinkleLight: "8s ease 0ms infinite normal none running twinkingLight",
-      goDown: "goDown 2s ease-in-out .5s alternate infinite none running",
+      goDown: "goDown 2s ease-in-out infinite",
+      goRight: "goRight 2s ease-in-out infinite",
+      bgPlim: "plim 1s ease-in-out infinite",
     },
     keyframes: {
       pulse: {
@@ -49,11 +51,18 @@ module.exports = {
         to: { transform: "rotate(360deg)" },
       },
       goDown: {
-        "0%": { transform: "translateY(0)" },
-        "25%": { transform: "translateY(-12px)" },
-        "50%": { transform: "translateY(0)" },
-        "75%": { transform: "translateY(-12)" },
-        "100%": { transform: "translateY(0)" },
+        "0%": { transform: "translateY(0) rotate(90deg)" },
+        "25%": { transform: "translateY(-4px) rotate(90deg)" },
+        "50%": { transform: "translateY(0) rotate(90deg)" },
+        "75%": { transform: "translateY(-4px) rotate(90deg)" },
+        "100%": { transform: "translateY(0) rotate(90deg)" },
+      },
+      goRight: {
+        "0%": { transform: "translateX(0)" },
+        "25%": { transform: "translateX(-4px)" },
+        "50%": { transform: "translateX(0)" },
+        "75%": { transform: "translateX(-4px)" },
+        "100%": { transform: "translateX(0)" },
       },
       twinkingLight: {
         "30%": { opacity: "0.6" },

@@ -74,10 +74,10 @@ interface iNavList {
 
 const NavList = ({ open }: iNavList) => {
   const list_tv = tv({
-    base: "absolute sm:py-4 overflow-hidden flex flex-col transition-all sm:static sm:h-max text-[2rem] sm:text-[1.5rem] justify-between pb-6 pt-24 sm:gap-2 backdrop-blur-sm w-0 sm:bg-transparent sm:flex-row sm:w-max sm:visible overflow-x-hidden bg-forest-500/90 invisible top-0 h-screen right-0 duration-1",
+    base: "fixed sm:py-4 overflow-hidden flex flex-col transition-all sm:static sm:h-max text-[2rem] sm:text-[1.5rem] justify-between py-24 sm:gap-2 w-0 sm:bg-transparent sm:flex-row sm:w-max sm:visible overflow-x-hidden bg-forest-700/95 invisible top-0 h-screen right-0 duration-1",
     variants: {
       open: {
-        true: "w-full visible",
+        true: "w-full visible z-1",
       },
     },
     defaultVariants: {
@@ -92,7 +92,7 @@ const NavList = ({ open }: iNavList) => {
             <a
               target="_blank"
               href={value.href}
-              className="flex flex-col items-center transition-colors duration-[.3s] hover:text-forest-700"
+              className="flex flex-col items-center transition-colors duration-[.3s] hover:text-forest-200"
             >
               {value.value}
             </a>
