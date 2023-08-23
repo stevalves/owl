@@ -44,7 +44,7 @@ const About = ({}: iAbout) => {
           />
           <div className="flex w-max -translate-y-2 flex-col justify-between gap-4 rounded-md bg-black/20 p-4 text-sm text-forest-100 md:text-xl">
             <p>1+ Anos codando</p>
-            <p>30+ Projetos concluidos</p>
+            <p>30+ Projetos concluídos</p>
           </div>
         </div>
       </div>
