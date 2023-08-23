@@ -11,12 +11,13 @@ const ParticlesAnimation = () => {
   }, []);
 
   return (
-    <div>
+    <div className="relative">
       <Particles
         id="tsparticles"
         init={particlesInit}
         options={{
           fpsLimit: 60,
+          pauseOnBlur: true,
           interactivity: {
             events: {
               onClick: {
@@ -54,14 +55,14 @@ const ParticlesAnimation = () => {
               straight: false,
             },
             collisions: {
-              enable: true,
+              enable: false,
             },
             number: {
               density: {
                 enable: true,
                 area: 800,
               },
-              value: 80,
+              value: 40,
             },
             opacity: {
               value: 0.6,

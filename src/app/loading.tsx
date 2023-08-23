@@ -1,6 +1,4 @@
-interface iLoading {}
-
-const Loading = ({}: iLoading) => {
+const Loading = () => {
   return (
     <div className="fixed left-0 right-0 top-0 flex h-screen items-center justify-center bg-black/50">
       <div className="relative inline-block h-20 w-20">

@@ -1,9 +1,9 @@
-import { FiSun } from "react-icons/fi";
+import { PiGearSixBold } from "react-icons/pi";
 
 const ButtonTheme = () => {
   return (
     <button className="flex items-center justify-center">
-      <FiSun />
+      <PiGearSixBold />
     </button>
   );
 };

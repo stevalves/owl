@@ -77,7 +77,7 @@ const NavList = ({ open }: iNavList) => {
     base: "fixed sm:py-4 overflow-hidden flex flex-col transition-all sm:static sm:h-max text-[2rem] sm:text-[1.5rem] justify-between py-24 sm:gap-2 w-0 sm:bg-transparent sm:flex-row sm:w-max sm:visible overflow-x-hidden bg-forest-700/95 invisible top-0 h-screen right-0 duration-1",
     variants: {
       open: {
-        true: "w-full visible z-1",
+        true: "w-full visible z-10",
       },
     },
     defaultVariants: {

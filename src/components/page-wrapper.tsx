@@ -1,5 +1,6 @@
 "use client";
 
+import Loading from "@/app/loading";
 import { motion, AnimatePresence } from "framer-motion";
 import { usePathname } from "next/navigation";
 
@@ -28,7 +29,9 @@ const DivTransition = () => {
         animate="animate"
         exit="exit"
         transition={{ delay: 0, duration: 0.4, ease: "easeIn" }}
-      />
+      >
+        <Loading />
+      </motion.div>
       <motion.div
         className="fixed bottom-0 right-full top-0 z-40 h-screen w-screen bg-forest-600"
         variants={transitionVar}

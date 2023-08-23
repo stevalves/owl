@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -15,46 +16,26 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #dfccaf;
+  background: #A8BCB0;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #ad6d2f;
+  background: #516D73;
   border-radius: 3px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #a77a4e;
+  background: #305040;
 }
 
+/* Bg image */
 body {
   background-image: url("../imgs/bg_dark_forest.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
-  transition: all 1s;
-  backdrop-filter: brightness(75%);
-  animation-name: plim;
-  animation-duration: 15s;
-  animation-iteration-count: infinite;
   object-fit: cover;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-@keyframes plim {
-  0% {
-    backdrop-filter: brightness(75%);
-  }
-  10% {
-    backdrop-filter: brightness(90%);
-  }
-  20% {
-    backdrop-filter: brightness(75%);
-  }
 }

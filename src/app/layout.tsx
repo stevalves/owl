@@ -1,16 +1,18 @@
 import Header from "@/components/Header/Header";
-import Aside from "@/components/Nav";
+import Nav from "@/components/Nav";
 
 import "./globals.css";
 
 import type { Metadata } from "next";
 import { Anek_Tamil } from "next/font/google";
 import { PageWrapper } from "@/components/page-wrapper";
+import ParticlesAnimation from "@/components/Particles";
+import Footer from "@/components/Footer";
 
 const font = Anek_Tamil({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "ealves",
+  title: "eSantos - Portfólio",
   description: "Estevão Alves dos Santos's portfolio.",
 };
 
@@ -20,13 +22,14 @@ interface iRootLayout {
 
 const RootLayout = ({ children }: iRootLayout) => {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body className={font.className}>
+        <Header />
         <PageWrapper>
-          <Aside />
-          <Header />
+          <ParticlesAnimation />
           {children}
         </PageWrapper>
+        <Footer />
       </body>
     </html>
   );
