@@ -29,7 +29,7 @@ const Talk = ({}: iTalk) => {
             <input
               type="hidden"
               name="_next"
-              value="http://localhost:3000/projects"
+              value="http://https://owl-tau.vercel.app/thanks"
             />
             <button className="text-xl border-2 border-forest-50 p-2 rounded hover:bg-forest-300/20 transition-colors duration-300" type="submit">Enviar</button>
           </form>
