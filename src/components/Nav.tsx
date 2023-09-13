@@ -26,7 +26,7 @@ const Nav = () => {
         <GoProjectRoadmap />
       </Link>
       <Link
-        href="#learning"
+        href="#technologies"
         className="flex w-1/5 justify-center p-4 transition duration-300 hover:bg-forest-600/50 md:w-max md:px-4 md:py-6"
       >
         <BiSolidBookBookmark />

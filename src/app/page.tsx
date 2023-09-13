@@ -1,4 +1,4 @@
-import { Me, About, Projects, Learning, Talk } from "@/sections";
+import { Me, About, Projects, Technologies, Talk } from "@/sections";
 import Nav from "@/components/Nav";
 
 const Home = () => {
@@ -8,7 +8,7 @@ const Home = () => {
         <Me />
         <About />
         <Projects />
-        <Learning />
+        <Technologies />
         <Talk />
       </main>
       <Nav />

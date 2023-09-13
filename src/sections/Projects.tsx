@@ -4,9 +4,7 @@ import { IoMdLink } from "react-icons/io";
 import { projects } from "../../data";
 import ProjectCard from "@/components/ProjectCard";
 
-interface iProjects {}
-
-const Projects = ({}: iProjects) => {
+const Projects = () => {
   return (
     <section id="projects" className="h-screen w-full scale-100 bg-forest-800">
       <div className="container mx-auto flex h-full flex-col px-2 py-4 md:flex-row">

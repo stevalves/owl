@@ -7,7 +7,6 @@ import {
 } from "react-icons/ai";
 import ButtonTheme from "../ButtonTheme";
 import { tv } from "tailwind-variants";
-import { randomUUID } from "crypto";
 
 interface iNavValues {
   id: string

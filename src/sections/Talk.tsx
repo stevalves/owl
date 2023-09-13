@@ -1,8 +1,4 @@
-import PageNumber from "@/components/PageNumber";
-
-interface iTalk {}
-
-const Talk = ({}: iTalk) => {
+const Talk = () => {
   return (
     <section id="talk" className="h-[75vh] w-full">
       <div className="container mx-auto flex h-full scale-100 border-t-2 border-dashed border-forest-800 bg-forest-700/40 px-2 py-4">

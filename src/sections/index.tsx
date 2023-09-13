@@ -1,7 +1,7 @@
 import About from "./About";
-import Learning from "./Learning";
+import Technologies from "./Technologies";
 import Me from "./Me";
 import Projects from "./Projects";
 import Talk from "./Talk";
 
-export { About, Learning, Me, Projects, Talk };
+export { About, Technologies, Me, Projects, Talk };
