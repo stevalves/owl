@@ -1,6 +1,3 @@
-"use client";
-
-import PageNumber from "@/components/PageNumber";
 import { AiFillHtml5 } from "react-icons/ai";
 import {
   BiLogoCss3,
@@ -26,7 +23,7 @@ import {
 } from "react-icons/si";
 import { DiScrum } from "react-icons/di";
 import { BsFillKanbanFill } from "react-icons/bs";
-import { Tooltip } from "react-tooltip";
+import TechnologieCard from "@/components/TechnologieCard";
 
 const icon_styles = "flex h-full w-full";
 const techs = {
@@ -156,16 +153,7 @@ const Technologies = () => {
               <h6 className="text-xl font-medium">Front</h6>
               <ul className="flex flex-wrap justify-center gap-2 sm:justify-normal">
                 {techs["front"].map((tech) => (
-                  <li
-                    key={tech.id}
-                    title={tech.name}
-                    data-tooltip-content={tech.name}
-                    data-tooltip-id={tech.id}
-                    className="h-16 w-16 rounded-2xl border-2 p-2 transition-colors duration-300 hover:bg-forest-800/50"
-                  >
-                    {tech.icon}
-                    <Tooltip id={tech.id} />
-                  </li>
+                  <TechnologieCard tech={tech} key={tech.id} />
                 ))}
               </ul>
             </div>
@@ -173,16 +161,7 @@ const Technologies = () => {
               <h6 className="text-xl font-medium">Back</h6>
               <ul className="flex flex-wrap justify-center gap-2 sm:justify-normal">
                 {techs["back"].map((tech) => (
-                  <li
-                    key={tech.id}
-                    title={tech.name}
-                    data-tooltip-content={tech.name}
-                    data-tooltip-id={tech.id}
-                    className="h-16 w-16 rounded-2xl border-2 p-2 transition-colors duration-300 hover:bg-forest-800/50"
-                  >
-                    {tech.icon}
-                    <Tooltip id={tech.id} />
-                  </li>
+                  <TechnologieCard tech={tech} key={tech.id} />
                 ))}
               </ul>
             </div>
@@ -190,16 +169,7 @@ const Technologies = () => {
               <h6 className="text-xl font-medium">Outros</h6>
               <ul className="flex flex-wrap justify-center gap-2 sm:justify-normal">
                 {techs["methods"].map((tech) => (
-                  <li
-                    key={tech.id}
-                    title={tech.name}
-                    data-tooltip-content={tech.name}
-                    data-tooltip-id={tech.id}
-                    className="h-16 w-16 rounded-2xl border-2 p-2 transition-colors duration-300 hover:bg-forest-800/50"
-                  >
-                    {tech.icon}
-                    <Tooltip id={tech.id} />
-                  </li>
+                  <TechnologieCard tech={tech} key={tech.id} />
                 ))}
               </ul>
             </div>
