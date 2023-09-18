@@ -35,7 +35,6 @@ const Header = () => {
     },
   });
 
-  // <header className="fixed left-0 right-0 top-0 z-20 bg-transparent text-gray-300">
   return (
     <header
       className={header({

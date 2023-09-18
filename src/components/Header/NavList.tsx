@@ -5,7 +5,6 @@ import {
   AiFillGithub,
   AiFillLinkedin,
 } from "react-icons/ai";
-import ButtonTheme from "../ButtonTheme";
 import { tv } from "tailwind-variants";
 
 interface iNavValues {
@@ -97,7 +96,6 @@ const NavList = ({ open }: iNavList) => {
             </a>
           </li>
       ))}
-      <ButtonTheme />
     </ul>
   );
 };
