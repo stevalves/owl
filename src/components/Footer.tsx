@@ -1,3 +1,4 @@
+import { BsFillArrowDownCircleFill } from "react-icons/bs";
 import Logo from "./Logo";
 
 interface iFooter {}

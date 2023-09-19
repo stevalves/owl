@@ -8,7 +8,6 @@ import {
   BiCodeCurly,
 } from "react-icons/bi";
 import {
-  SiZdf,
   SiStyledcomponents,
   SiReacthookform,
   SiExpress,
@@ -23,6 +22,7 @@ import {
 } from "react-icons/si";
 import { DiScrum } from "react-icons/di";
 import { BsFillKanbanFill } from "react-icons/bs";
+import { TbLetterZ } from "react-icons/tb";
 import TechnologieCard from "@/components/TechnologieCard";
 
 const icon_styles = "flex h-full w-full";
@@ -66,7 +66,7 @@ const techs = {
     {
       id: "Zod",
       name: "Zod",
-      icon: <SiZdf className={icon_styles} />,
+      icon: <TbLetterZ className={icon_styles} />,
     },
     {
       id: "StyledComponents",
@@ -142,7 +142,7 @@ const techs = {
 
 const Technologies = () => {
   return (
-    <section id="technologies" className="flex min-h-screen w-full items-end">
+    <section id="technologies" className="mt-24 flex w-full items-end">
       <div className="container mx-auto flex h-full scale-100 flex-col-reverse rounded-bottom border-b-2 border-dashed border-forest-800 bg-forest-700/40 px-2 py-4 md:flex-row-reverse">
         <div className="flex h-full w-full flex-col p-8 text-forest-100">
           <h3 className="p-4 text-center text-xl md:text-start md:text-2xl">

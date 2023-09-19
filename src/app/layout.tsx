@@ -1,7 +1,7 @@
 import Header from "@/components/Header/Header";
 
 import "./globals.css";
-import 'react-tooltip/dist/react-tooltip.css'
+import "react-tooltip/dist/react-tooltip.css";
 
 import type { Metadata } from "next";
 import { Anek_Tamil } from "next/font/google";
