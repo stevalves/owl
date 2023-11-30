@@ -12,7 +12,7 @@ const About = () => {
             Um pouco sobre mim...
           </h4>
           <p>
-            Olá, sou Estevão, tenho 20 anos e sou de Marília, SP. Desde minha
+            Olá, sou Estevão, tenho 21 anos e sou de Marília, SP. Desde minha
             adolescência, meu interesse pela informática sempre foi evidente,
             levando-me a investir em cursos que abrangem diversas áreas desse
             campo, como assistência de suporte técnico e pacote Office.
@@ -29,10 +29,30 @@ const About = () => {
             desafiadores que me permitiram aplicar meu aprendizado na prática.
             Além disso, esse percurso também me ajudou a crescer como indivíduo,
             desenvolvendo habilidades interpessoais e de comunicação que
-            considero tão importantes quanto as habilidades técnicas. Estou
-            animado para continuar minha jornada no mundo da tecnologia, aonde
-            irei investir em um ensino superior no próximo ano, e contribuir
-            para projetos empolgantes no futuro.
+            considero tão importantes quanto as habilidades técnicas.
+          </p>
+          <p>
+            Atualmente, estou cursando Ciências da Computação para aprimorar
+            ainda mais minha base de conhecimento. Essa jornada acadêmica
+            reflete meu compromisso contínuo com o aprendizado e o
+            desenvolvimento na área de tecnologia.
+          </p>
+          <p>
+            Fico à disposição para compartilhar mais sobre minha trajetória e
+            habilidades, e estou aberto a oportunidades de colaboração. Caso
+            queira entrar em contato, você pode me encontrar por{" "}
+            <a
+              href="https://api.whatsapp.com/send?phone=+5514998727753&text=Ol%C3%A1%2C%20venho%20por%20meio%20do%20seu%20portf%C3%B3lio%20na%20internet%2C%20gostaria%20de%20conhecer%20melhor%20seus%20servi%C3%A7os"
+              className="underline"
+            >
+              aqui
+            </a>
+            .
+          </p>
+
+          <p>
+            Agradeço pela atenção e estou empolgado com as possibilidades que o
+            futuro na tecnologia reserva para mim.
           </p>
         </div>
         <div className="flex w-full flex-col items-center justify-center md:h-full md:w-max md:justify-center">

@@ -3,7 +3,7 @@ const Talk = () => {
     <section id="talk" className="h-[75vh] w-full">
       <div className="container mx-auto flex h-full scale-100 border-t-2 border-dashed border-forest-800 bg-forest-700/40 px-2 py-4">
         <div className="flex h-full w-full flex-col items-center justify-center gap-6 text-forest-50">
-          <h3 className="text-4xl text-center">Bora troca uma idéia?</h3>
+          <h3 className="text-4xl text-center">Vamos conversar?</h3>
           <form
             action="https://formsubmit.co/ealves1710@hotmail.com"
             method="POST"
