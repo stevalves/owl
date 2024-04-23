@@ -32,7 +32,7 @@ const About = () => {
             considero tão importantes quanto as habilidades técnicas.
           </p>
           <p>
-            Atualmente, estou cursando Ciências da Computação para aprimorar
+            Atualmente, estou cursando Análise e Desenvolvimento de Sistemas para aprimorar
             ainda mais minha base de conhecimento. Essa jornada acadêmica
             reflete meu compromisso contínuo com o aprendizado e o
             desenvolvimento na área de tecnologia.
